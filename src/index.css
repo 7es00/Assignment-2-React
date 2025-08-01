@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --main-color: #1abc9c;
+    --second-color: #2c3e50;
+}
+
+
+
+:host, :root {
+    --fa-font-regular: normal 400 1em / 1 "Font Awesome 6 Free";
+}
+
+:host, :root {
+    --fa-style-family-brands: "Font Awesome 6 Brands";
+    --fa-font-brands: normal 400 1em / 1 "Font Awesome 6 Brands";
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    :root {
+        scroll-behavior: smooth;
+    }
+}
+
+
+.fa-star:before {
+    content: "\f005";
+}
+
+.fa-brands, .fab {
+    font-weight: 400;
+}
+.fa-brands , .fa-solid{
+    box-sizing: content-box;
+
+}
+/* Custom component styles */
+.line {
+    height: 4px;
+    width: 80px;
+}
+
+.layer__ {
+    background-color: #1abc9ce6;
+    opacity: 0;
+    cursor: pointer;
+    transition: .6s opacity;
+}
+
+.layer__:hover {
+    opacity: 1;
+}
+
+.icon {
+    border: 1px white solid;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.__top {
+    top: 40px !important;
+}
